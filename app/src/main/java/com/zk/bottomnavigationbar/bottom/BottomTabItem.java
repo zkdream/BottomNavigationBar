@@ -40,8 +40,8 @@ public abstract class BottomTabItem {
      */
     protected abstract void initLayout();
 
-    protected <T> T findViewById(){
-        return (T) mTabItemView;
+    protected <T> T findViewById(int id){
+        return (T) mTabItemView.findViewById(id);
     }
 
     /**

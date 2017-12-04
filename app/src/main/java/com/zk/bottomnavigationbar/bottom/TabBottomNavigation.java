@@ -39,7 +39,7 @@ public class TabBottomNavigation extends LinearLayout{
         mTabItems=new ArrayList<>();
     }
 
-    public void setTabIterator(TabIterator tabIterator){
+    public void setTabIterator(TabIterator<BottomTabItem> tabIterator){
         mTabItems.clear();
 //        当前位置
         int index=0;
@@ -89,6 +89,6 @@ public class TabBottomNavigation extends LinearLayout{
     }
 
     public interface TabBottomClickListener{
-        void click(int positon);
+        void click(int position);
     }
 }

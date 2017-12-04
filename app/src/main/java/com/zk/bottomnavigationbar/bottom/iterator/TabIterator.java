@@ -10,7 +10,7 @@ import com.zk.bottomnavigationbar.bottom.BottomTabItem;
  * @describe 迭代器模式定义标准接口
  */
 
-public interface TabIterator {
+public interface TabIterator<M extends BottomTabItem> {
 
     BottomTabItem next();
 

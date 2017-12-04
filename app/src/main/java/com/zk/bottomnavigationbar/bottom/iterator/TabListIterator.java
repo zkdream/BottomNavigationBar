@@ -1,7 +1,5 @@
 package com.zk.bottomnavigationbar.bottom.iterator;
 
-import android.view.View;
-
 import com.zk.bottomnavigationbar.bottom.BottomTabItem;
 
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ import java.util.List;
  * @describe 迭代器具体的实现类
  */
 
-public class TabListIterator<T extends BottomTabItem> implements TabIterator {
+public class TabListIterator<T extends BottomTabItem> implements TabIterator<BottomTabItem> {
     private List<T> mTabItems;
     private int index;
 
